@@ -1,0 +1,274 @@
+
+
+
+
+.logo{
+    position: relative; 
+    width: 120px;
+    height: 48px;
+    left: 44px;
+    /* border: 5px solid darkblue; */
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 5px
+    }
+
+body{
+    padding: 40px 40px;
+    background-color: #e5e5e5;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+main 
+{
+    display: flex;
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+::placeholder{
+font-weight:normal;
+font-size: 32px;
+color: #0A3871;
+
+}
+
+.input-texto{
+margin-top: 30px;
+font-family:'Verdana';
+font-weight: bold;
+font-size: 32px;
+background-color: #e5e5e5;
+color: #0A3871;
+text-align: justify;
+border: none;
+/* height: 400px;
+width:577px; */
+}
+.input-texto:hover{
+    
+    background-color: white;
+}
+
+.recomendacionimg{
+    float: left;
+    margin-top: 5px;
+    
+}
+.recomendacion {
+    padding:7px 20px;
+    color: #495057;
+    font-size: 12px;
+}
+.botones{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px; 
+}
+
+.encriptar{
+    width: 50%;
+    padding: 15px 0;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background-color:#0A3871;
+    border: none;
+    border-radius: 20px;
+    transition: 1s background;
+    cursor:pointer
+ }
+ .encriptar:hover{
+    background-color:white;
+    color:#0A3871;
+    font-size: 20px;
+    border-style: double;
+    border-color:#0A3871;
+ }
+
+ .encriptar:active{
+    border-color: black;
+    color:black;
+    }
+
+ .desencriptar{
+    width: 50%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:#0A3871;
+    background-color:#D8DFE8;
+    border-color: #0A3871;
+    border-radius: 20px;
+    transition: 1s background;
+    cursor:pointer
+ }
+ .desencriptar:hover{
+    color:darkblue;
+    background-color:white ;
+    font-size: 20px;
+    border-color:darkblue;
+    border-style:dashed;
+   }
+
+.desencriptar:active{
+    border-color: black;
+    color:black;
+    }
+
+.mensaje{
+    
+    position:relative;
+    /* width:400px;
+    height:600px; */
+    border: none;
+    margin-top: -60px;
+    margin-left: 150px;
+    background-image: url("imagenes/Muneco.png");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    border-radius: 10px;
+    font-size: 24px;
+    font-family:'arial';
+    color:#495057;
+    text-align: justify;
+    padding: 20px;
+         
+         
+}
+.mensaje:hover{
+    opacity: 30%;
+    transition: 400ms;
+ }
+
+ .lista {
+    
+    position: relative;
+    width: 336px;
+    height: 122px;
+    margin-top:-150px;
+    margin-bottom: 10px;
+    left: 180px;
+    text-align: center;
+    /* border: 5px solid darkblue; */
+ }  
+
+.informacion{
+    font-size: 15px;
+}
+
+.inform1 {
+    font-family:'Verdana';
+    font-weight: bold;
+    font-size: 24px;
+
+}
+.inform1:hover{
+    opacity: 30%;
+    transition: 400ms;
+}
+.inform2 {
+font-family:'arial';
+color: gray;
+font-weight:normal;
+font-size: 18px;
+margin-top: 20px;
+
+}
+.inform2:hover{
+    opacity: 50%;
+    transition: 400ms;
+}
+
+.copia{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-top: 60px;
+}
+.copiar {
+    
+    width: 50%;
+    margin-left: 220px;
+    padding: 15px 0px;
+    margin-right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color:#0A3871;
+    background-color:#D8DFE8;
+    border-color:#0A3871;
+    border-radius: 20px;
+    transition: 1s background;
+    cursor:pointer;
+   
+}
+.copiar:hover{
+
+    background-color:white;
+    color:darkblue;
+    font-size: 20px;
+    border-style:dashed;
+    border-color:darkblue;
+ }
+.copiar:active{
+    border-color: black;
+    color:black;
+        }
+
+
+/* ajuste a pantallas */
+@media screen and (max-width:480px){
+    .logo{
+        text-align: left;
+        left: 0px;
+    }
+
+    body, main{
+        width: auto;
+        display: block;
+    }
+
+    .input-texto{
+        font-size:large;
+    }
+    .botones{
+        display: block;
+    }
+.recomendacionimg{
+    float: unset;
+    display: block;
+}
+
+    .encriptar, .desencriptar{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .mensaje {
+      margin-top: 10px;
+      margin-left: auto;
+      width: -webkit-fill-available;
+    }
+
+    .lista{
+        left: 0px;
+        width: auto;
+    }
+    .copiar{
+        margin-left: 0px;
+        width: 100%;
+    }
+    nav{
+       position: static;
+    }
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+       width: auto;
+}
+.lista-diferenciales, .imagenDiferenciales{
+ width: 100%;
+}
+}
+
